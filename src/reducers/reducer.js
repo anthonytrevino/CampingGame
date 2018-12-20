@@ -10,7 +10,7 @@ const initialState = {
 }
 
 const reducer = (state= initialState, action) => {
-    if(action.type =="tentSelected1") {
+    if(action.type ==="tentSelected1") {
       return {
         ...state,
         tentSelected : true,
@@ -18,7 +18,7 @@ const reducer = (state= initialState, action) => {
         userTentImg : "Tent1.jpg"
 
       }
-    } else if(action.type =="tentSelected2")
+    } else if(action.type ==="tentSelected2")
       {
       return {
         ...state,
@@ -26,7 +26,7 @@ const reducer = (state= initialState, action) => {
         tentNumber: 2,
         userTentImg : "./components/images/Tent2.jpg"
       }
-    }else if(action.type =="tentSelected3")
+    }else if(action.type ==="tentSelected3")
       {
       return{
         ...state,
@@ -35,7 +35,7 @@ const reducer = (state= initialState, action) => {
         userTentImg : "./components/images/Tent3.jpg"
       }
     }
-    else if(action.type =="tentSelected4")
+    else if(action.type ==="tentSelected4")
       {
       return{
         ...state,
@@ -44,7 +44,7 @@ const reducer = (state= initialState, action) => {
         userTentImg : "./components/images/Tent4.jpg"
       }
     }
-    else if(action.type =="tentSelected5")
+    else if(action.type ==="tentSelected5")
       {
       return{
         ...state,
@@ -53,7 +53,7 @@ const reducer = (state= initialState, action) => {
         userTentImg : "./components/images/Tent5.jpg"
       }
     }
-    else if(action.type =="tentSelected6")
+    else if(action.type ==="tentSelected6")
       {
       return{
         ...state,
@@ -62,7 +62,7 @@ const reducer = (state= initialState, action) => {
         userTentImg : "./components/images/Tent6.jpg"
       }
     }
-    else if(action.type =="inEvent")
+    else if(action.type ==="inEvent")
       {
       return{
         ...state,
@@ -70,7 +70,7 @@ const reducer = (state= initialState, action) => {
 
       }
     }
-    else if(action.type =="bearSelected")
+    else if(action.type ==="bearSelected")
       {
       return{
         ...state,

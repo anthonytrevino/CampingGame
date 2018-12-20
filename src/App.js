@@ -3,14 +3,15 @@ import React, { Component } from 'react';
 import './App.css';
 import TentSelect from './components/Tents/TentSelect.js';
 // import {createStore} from "redux";
-import reducer from "./reducers/reducer";
-import BearSpawn from "./components/Events/Animals/Bear";
-import CatSpawn from "./components/Events/Animals/Cat";
-import SnakeSpawn from "./components/Events/Animals/Snake";
-import RandomEvent from './components/Events/Event';
+// import reducer from "./reducers/reducer";
+// import BearSpawn from "./components/Events/Animals/Bear";
+// import CatSpawn from "./components/Events/Animals/Cat";
+// import SnakeSpawn from "./components/Events/Animals/Snake";
+// import RandomEvent from './components/Events/Event';
 import MyCamp from './components/Tents/MyCamp';
 import {connect} from 'react-redux';
-import './components/images/Tent1.jpg'
+import './components/images/Tent1.jpg';
+import Checkout from './Checkout';
 
 
 class App extends Component {
@@ -19,7 +20,7 @@ class App extends Component {
 
 
   render() {
-    console.log(this.props)
+    // console.log(this.props)
     return (
 
       <div className="App">
@@ -34,6 +35,14 @@ class App extends Component {
               <MyCamp {...this.props} />
             </div>
         }
+
+
+          <div >
+            <Checkout
+            name={'The Road to learn React'}
+            description = {'Only the Book'}
+            amount={1} />
+          </div>
 
       </div>
     );

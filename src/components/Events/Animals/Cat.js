@@ -16,6 +16,8 @@ const answerHandler = (e) => {
     case "Challenge":
     result = "Only the most brave or most foolish would do what you just did. The good thing is now's not the time to take an IQ test, It's time to test your might! Fight!";
     break;
+    default:
+      // do nothing
   }console.log(result)
 }
 
@@ -27,7 +29,7 @@ const CatSpawn =() => {
     <div>
       <div>
         <h1 className="EventTitle">A cat walks up to you</h1>
-        <img src={require("./animalpictures/cat default.jpeg")} />
+        <img alt="alt" src={require("./animalpictures/cat default.jpeg")} />
         <h3>"What will you do?"</h3>
             <ul className="ActionList">
               <li id="Feed" onClick={answerHandler} className="ActionItems">Feed it</li>

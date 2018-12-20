@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
-import TentSelect,{UserTent} from './TentSelect';
+import {UserTent} from './TentSelect';
 import RandomEvent from '../Events/Event.js';
-import reducer from '../../reducers/reducer';
+// import reducer from '../../reducers/reducer';
 // import EventSelector from 'EventSelector';
 
 class MyCamp extends Component{
@@ -25,7 +25,7 @@ class MyCamp extends Component{
 
         <UserTent {...this.props}>
 
-          <img src={require(`../images/Tent${this.props.tentNumber}.jpg`)} />
+          <img alt="tentNumberImg" src={require(`../images/Tent${this.props.tentNumber}.jpg`)} />
         </UserTent>
 
 
@@ -34,14 +34,14 @@ class MyCamp extends Component{
             </div>
 
 
-         }
+
 
 
 
       </div>
     )
   }
-}
+  }
 
 
 export default MyCamp;
