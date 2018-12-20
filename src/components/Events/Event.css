@@ -1,0 +1,26 @@
+.RandomEvent {
+  width: 100%;
+  height: 100%;
+  padding:50px;
+  margin: 50px 20px 50px 20px;
+}
+
+.RandomEvent img{
+  width:80%;
+  height:auto;
+}
+
+.EventTitle {
+  border: 2px solid green;
+}
+
+.ActionList {
+  list-style-type:none;
+}
+
+.ActionItems {
+  padding-top:10px;
+  cursor: pointer;
+  margin-bottom:20px;
+
+}
